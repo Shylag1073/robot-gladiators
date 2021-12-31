@@ -23,10 +23,9 @@ var fight = function () {
     playerHealth = playerHealth - enemyAttack;
 
     // Log a resulting message to the console so we know that it worked.
-    enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
-);
-
-
+    console.log(
+        enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
+    );
 };
 
 fight();
