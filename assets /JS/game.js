@@ -1,5 +1,5 @@
 var playerName = window.prompt("What is your robot's name?");
-var playerHealth = 100;
+var playerHealth = 12;
 var playerAttack = 10;
 
 // You can also log multiple values at once like this
@@ -26,7 +26,19 @@ var fight = function () {
     console.log(
         enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
     );
+    // put new code under this
+    console.log(enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining.");
+
+    // check player's health
+    if (playerHealth <= 0) {
+        window.alert(playerName + " has died!");
+    }
+    else {
+        window.alert(playerName + " still has " + playerHealth + " health left.");
+    }
 };
+
+
 
 fight();
 
